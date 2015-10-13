@@ -1,25 +1,59 @@
 var scores = [82, 71, 95, 55, 98, 69, 72, 78, 84, 64, 58, 87];
 
+var gradeA = [];
+var gradeB = [];
+var gradeC = [];
+var gradeD = [];
+var gradeF = [];
+
+lowestScore = 101;
+highestScore = 0;
+
 for (var i = 0; i < scores.length; i++) {
 	var score = scores[i];
 	if (score > 90) {
-		console.log("Grade is A", score);
+		gradeA.push(score);
 	}
 	else if (score > 80) {
-		console.log("Grade is B", score);
+		gradeB.push(score);
 	}
 	else if (score > 70) {
-		console.log("Grade is C", score);
+		gradeC.push(score);
 	}
 	else if (score > 60) {
-		console.log("Grade is D", score);
+		gradeD.push(score);
 	}
 	else {
-		console.log("Grade is F", score);
+		gradeF.push(score);
+	}
+
+
+
+	if (score < lowestScore) {
+		lowestScore = score;
+	}
+
+	if (score > highestScore) {
+		highestScore = score;
 	}
 }
 
-/* Loop over an array of student grades (values from 50-100) and outputs how many of each grades there are.
+
+console.log("Num of A: " + gradeA.length);
+console.log("Num of B: " + gradeB.length);
+console.log("Num of C: " + gradeC.length);
+console.log("Num of D: " + gradeD.length);
+console.log("Num of F: " + gradeF.length);
+
+console.log("Highest Score: " + highestScore);
+console.log("Lowest Score: " + lowestScore);
+
+
+
+
+
+/* Loop over an array of student grades (values from 50-100) and outputs 
+how many of each grades there are.
 
 A score between 50-60 is an F
 A score between 61-70 is a D
