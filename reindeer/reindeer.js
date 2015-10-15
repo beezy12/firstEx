@@ -13,21 +13,19 @@
 */
 
 
+var output = "";   //output just creates a string
+var hohohoElement = document.getElementById("reindeer");
 
 var colors = ["Blue", "Red", "Orange", "Purple", "Hazel", "Aquamarine", "Periwinkle", "Azure", "Fuchsia", "Chocolate", "Amber", "Amaranth"];
 var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"];
-
-var hohohoElement = document.getElementById("reindeer");
-
-var output = "";   //output just creates a string
 
 for (i = 0; i < reindeer.length; i++) {    //chose reindeer.length bc it was a shorter array
   var currentReindeer = reindeer[i];
   var currentColor = colors[i];
 
-  output = output + "<div>";   //javascript will read anything not in quotes as a variable
-  output = output + currentColor + " " + currentReindeer;
-  output = output + "</div>"
+  output = output + "<div>" + colors[i] + " " + reindeer[i] + "</div>";
+  // output = output + colors[i] + " " + reindeer[i];   <--these 2 lines are the same thing as this ^^^  
+  // output = output + "</div>"
 }
 
 console.log(output);
@@ -39,4 +37,6 @@ for (var i = 0; i < arrayLength; i++) {
     alert(myStringArray[i]);
     //Do something     this was taken from online at stackoverflow
 }  */
+
+
 
