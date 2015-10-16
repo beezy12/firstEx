@@ -23,13 +23,20 @@
       the converted temperature should be blue.
   9. For any other temperature, the color should be green.
 */
+// To convert temperatures in degrees Fahrenheit to Celsius, 
+// subtract 32 and multiply by .5556 (or 5/9).
 
-function toCelsius () {
-  
+function toCelsius (userTemp) {
+  var F2CTemp = (userTemp - 32) * .5556;
+  console.log("Fahr to Cel temp: ", F2CTemp);
+  return F2CTemp;
 }
 
-function toFahrenheit () {
-
+// °C to °F  Multiply by 9, then divide by 5, then add 32
+function toFahrenheit (userTemp) {
+  var C2FTemp = userTemp * 9 / 5 + 32;
+  console.log("Cel to Fahr temp: ", C2FTemp);
+  return C2FTemp;
 }
 
 // Get a reference to the button element in the DOM
@@ -37,9 +44,24 @@ var button = document.getElementById("converter");
 
 // This function should determine which conversion should
 // happen based on which radio button is selected.
-function determineConverter (clickEvent) {
-  console.log("event", clickEvent);
+function determineConverter (userInput) {
+  var userInput = document.getElementById("userTemp").value;
+  if (document.getElementById('r1').checked) {
+    toCelsius(userInput);
+    console.log(userInput);
+  }
+  else if (document.getElementById('r2').checked) {
+    toFahrenheit(userInput);
+    console.log(userInput);
+  }
+  // console.log("event", clickEvent);
 }
 
 // Assign a function to be executed when the button is clicked
 button.addEventListener("click", determineConverter);
+
+
+
+
+
+

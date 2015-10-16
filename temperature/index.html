@@ -14,29 +14,27 @@
 		<legend>Enter Temp Info</legend>
 
 		<label for="temp" >Enter your Temp:</label>
-		<input type="text" name="temp">
+		<input type="text" id="userTemp" name="temp">
+
 	</fieldset>
 
     <fieldset>
 		<legend>Which Temperature to convert to?</legend>
 
-		<input type="radio" name="temp-type" value="word"> Fahrenheit
-		<input type="radio" name="temp-type" value="excel"> Celsius
+		<input type="radio" id="r1" name="temp-type" value="fahr"> Celsius
+		<input type="radio" id="r2" name="temp-type" value="cel"> Fahrenheit
+
     </fieldset>
 
 
-		<input type="submit" value="Calc Temp"></input>
+</form>
+ 
+  <button id="converter" value="Calc Temp" >Click to convert</button>
 
-  
+  <div id="end">
+  </div>
 
-
-	<div id="converter">
-
-	</div>
-
-
-  
-	<script src="temp.js"></script>
+<script src="temp.js"></script>
 
 </body>
 </html>
