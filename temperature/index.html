@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Temp Converter</title>
+</head>
+
+<body>
+
+<form action="convert">
+	
+	<fieldset>
+		<legend>Enter Temp Info</legend>
+
+		<label for="temp" >Enter your Temp:</label>
+		<input type="text" name="temp">
+	</fieldset>
+
+    <fieldset>
+		<legend>Which Temperature to convert to?</legend>
+
+		<input type="radio" name="temp-type" value="word"> Fahrenheit
+		<input type="radio" name="temp-type" value="excel"> Celsius
+    </fieldset>
+
+
+		<input type="submit" value="Calc Temp"></input>
+
+  
+
+
+	<div id="converter">
+
+	</div>
+
+
+  
+	<script src="temp.js"></script>
+
+</body>
+</html>
