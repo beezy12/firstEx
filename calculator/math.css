@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #00FF00;
+}
+
+
+#userInput1 {
+	float: left;
+	max-width: 200px;
+	height: 250px;
+	/*display: inline;*/
+	line-height: 1.8em;
+	/*padding: 10px;*/
+	font-size: 4.6em;
+	text-align: center;
+	margin: 100px 0 0 100px;
+	border: 5px ridge blue;
+
+}
+
+.in1 {
+	max-width: 20%
+	height: 400px;
+}
+
+
+
+.buttons {
+	width: 65px;
+	height: 65px;
+	display: block;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+
+.buttBox {
+	margin: 100px 10px 0 10px;
+
+}
+
+.result {
+	border: 2px solid blue;
+	height: 20px;
+	width: 20px;
+	background-color: black;
+
+}
+
+.input2 {
+	float: left;
+}
