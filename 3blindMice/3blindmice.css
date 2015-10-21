@@ -1,0 +1,73 @@
+/***** 3blindmice CSS  */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*header {
+	max-width: 100%;
+}*/
+
+#miceLogo {
+	margin: 0 0 0 30px;
+
+	/*height: 250px;*/
+	/*float: left;*/
+	vertical-align: middle;
+}
+
+input#userMessage {
+	font-size: 1.5em;
+	width: 60%;
+	margin: 30px 0 30px 30px;
+}
+
+#checkboxes {
+	margin: 0 0 0 60px;
+
+}
+
+#clear {
+	font-size: 1.5em;
+	border-radius: 5px;
+}
+
+h3 {
+	margin: 30px 0 0 40px;
+}
+
+#messageBox {
+	width: 80%;
+	height: 500px;
+	margin: 20px 0 30px 60px;
+	padding: 50px 20px 20px 20px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.darken {
+	background-color: #333300;
+	color: white;
+}
+
+.lightBorder {
+	border: 2px solid white;
+}
+
+.giant {
+	font-size: 1.4em;
+}
+
+.delete {
+	margin: 0 0 0 15px;
+}
+
+#entry {
+	font-size: 1.3em;
+	margin: 5px 0 5px 0;
+}
+
+
+
