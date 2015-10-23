@@ -1,0 +1,189 @@
+html {
+	margin: 0;
+	padding: 0;
+	background-color: #efebdf;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: Ariel, sans-serif;
+}
+
+div#main-container {
+	max-width: 65%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+/***************** NAVIGATION STYLING ******************/
+
+.bottom-border {
+	border-bottom: 2px solid #b1a1a1;
+}
+
+.dotted-bottom {
+	border-bottom: 1px dotted #b1a1a1;
+}
+
+.quicksand-font {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.source-font {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	padding-left: 200px;
+}
+
+#nav {
+	list-style-type: none;
+	text-align: left;
+  	padding: 19px 9px 16px;
+  	margin: auto 0;
+}
+
+#nav ul {
+	display: inline-block;
+}
+
+#nav li {
+	padding: 0 .2em;
+  	width: 45px;
+ 	text-align: left;
+  	display: inline;
+}
+
+#nav a {
+	text-decoration: none;
+	font-size: 1.15em;
+}
+
+img {
+	width: 190px;
+	height: auto;
+	margin-left: 10px;
+	position: fixed;
+	z-index: 1000;
+}
+
+/***************** #SIDEBAR STYLING ******************/
+
+#sidebar {
+	float: left;
+	margin: 3% 1.7% 0 0;
+	min-width: 30%;
+	max-width: 30%;
+	background-color: #FCFBF9;
+	box-sizing: border-box;
+	border-radius: 9px;
+}
+
+#filter-form {
+	margin: 1em 1em;
+}
+
+#filter-form label, #filter-form select {
+	margin: 4px 0 7px 0;
+	padding-top: 10px;
+}
+
+#filter-form select, #filter-form label, #container {
+	display: block;
+}
+
+#container {
+	margin: 15px 0 0 0;
+	text-align: left;
+}
+
+.green-button {
+	border: none;
+	border-bottom: 3px solid #42958F;
+	background-color: #52bab3;
+	font-size: 1em;
+	padding: 3px 7px;
+	border-radius: 4px;
+
+}
+
+
+/***************** SONG LIST STYLING ******************/
+
+#song-list, 
+#add-songs {
+	float: right;
+	margin: 3% 0 0 0;
+	width: 61%;
+	background-color: #FCFBF9;
+	box-sizing: border-box;
+	border-radius: 9px;
+}
+
+#song-container {
+	margin: auto 0;
+}
+
+#song-list h2,
+#add-songs h2 {
+	color: #4C4C4C;
+	margin: 0;
+	padding: .4em 0 0 1em;
+}
+
+#song-list container p,
+#add-songs container p {
+	padding: 1em 1em 1em 1.5em;
+	margin: 0;
+}
+
+container div:first-child {
+	border-radius: 9px 9px 0 0;
+}
+
+container div:last-child {
+	border-radius: 0 0 9px 9px;
+	border: none;
+}
+
+container div:nth-child(2n+0) {
+	background: #F9F2DB;
+}
+
+container div:nth-child(2n+1) {
+	background: #FCFBF9;
+}
+
+/************* Add music styling ************/
+
+button#add-music {
+	margin: 20px 30px;
+}
+
+
+
+/************* DYNAMIC STYLES *************/
+
+.hidden {
+	display: none;
+}
+
+
+/************* MEDIA QUERIES **************/
+
+@media screen and (max-width: 1370px) {
+	div#main-container {
+		max-width: 75%;
+		margin: 0 10% 0 15%;
+	}	
+
+	#sidebar {
+		margin: 3% .8% 0 0;
+		min-width: 27%;
+	}
+}
