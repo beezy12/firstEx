@@ -45,9 +45,9 @@ coinCounter(userMoney);
 
 function coinCounter (moneyArg) {
   var initMoney = moneyArg;
-  
+
     var quarters = Math.floor(moneyArg / .25);
-    moneyArg = moneyArg % .25;            
+    moneyArg = moneyArg % .25;
     console.log("Quarters: ", quarters);
 
     dimes = Math.floor(moneyArg / .1);
@@ -58,9 +58,9 @@ function coinCounter (moneyArg) {
     moneyArg = moneyArg % .05;
     console.log("Nickels: ", nickels);
 
-    // pennies = userMoney / .01;            //probably don't have to do math for pennies, it will take whatever is left
-    // userMoney = userMoney % .01;
-    // console.log("Pennies: ", pennies);
+    pennies = userMoney / .01;            //probably don't have to do math for pennies, it will take whatever is left
+    userMoney = userMoney % .01;
+    console.log("Pennies: ", pennies);
 
     var pennies = (initMoney * 100) - ((quarters * 25)  + (dimes * 10)  + (nickels * 5))
     console.log("Pennies: ", pennies);
